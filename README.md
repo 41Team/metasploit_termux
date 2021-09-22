@@ -12,7 +12,6 @@ chmod +x metasploit.sh
 
 ./metasploit.sh
 ```
-
 ## After installation complete
 Start `postgresql`
 ```bash
