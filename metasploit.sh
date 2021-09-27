@@ -72,6 +72,10 @@ if [ -e $PREFIX/bin/msfvenom ];then
 	rm $PREFIX/bin/msfvenom
 fi
 ln -s $HOME/metasploit-framework/msfconsole /data/data/com.termux/files/usr/bin/
+ln -s $HOME/metasploit-framework/msfd /data/data/com.termux/files/usr/bin/
+ln -s $HOME/metasploit-framework/msfdb /data/data/com.termux/files/usr/bin/
+ln -s $HOME/metasploit-framework/msfrpc /data/data/com.termux/files/usr/bin/
+ln -s $HOME/metasploit-framework/msfrpcd /data/data/com.termux/files/usr/bin/
 ln -s $HOME/metasploit-framework/msfvenom /data/data/com.termux/files/usr/bin/
 termux-elf-cleaner /data/data/com.termux/files/usr/lib/ruby/gems/2.4.0/gems/pg-0.20.0/lib/pg_ext.so
 
