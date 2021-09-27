@@ -4,6 +4,8 @@
 
 ### Manual
 ```bash
+pkg install unstable-repo
+
 pkg install wget
 
 pkg install ruby
