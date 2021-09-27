@@ -6,6 +6,10 @@
 ```bash
 pkg install wget
 
+pkg install ruby
+
+gem install bundler
+
 wget https://raw.githubusercontent.com/gushmazuko/metasploit_in_termux/master/metasploit.sh
 
 chmod +x metasploit.sh
