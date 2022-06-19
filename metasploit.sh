@@ -11,21 +11,6 @@ center() {
 center " Loading..."
 source <(echo "c3Bpbm5lcj0oICd8JyAnLycgJy0nICdcJyApOwoKY291bnQoKXsKICBzcGluICYKICBwaWQ9JCEKICBmb3IgaSBpbiBgc2VxIDEgMTBgCiAgZG8KICAgIHNsZWVwIDE7CiAgZG9uZQoKICBraWxsICRwaWQgIAp9CgpzcGluKCl7CiAgd2hpbGUgWyAxIF0KICBkbyAKICAgIGZvciBpIGluICR7c3Bpbm5lcltAXX07IAogICAgZG8gCiAgICAgIGVjaG8gLW5lICJcciRpIjsKICAgICAgc2xlZXAgMC4yOwogICAgZG9uZTsKICBkb25lCn0KCmNvdW50" | base64 -d)
 
-echo
-center "*** Dependencies installation..."
-
-# Set low priority for all gushmazuko repository (for security purposes)
-# Set highest priority for ruby package from gushmazuko repository
-echo '## Set low priority for all gushmazuko repository (for security purposes)
-Package: *
-Pin: release gushmazuko
-Pin-Priority: 100
-
-## Set highest priority for ruby package from gushmazuko repository
-Package: ruby
-Pin: release 41Team
-Pin-Priority: 1001' | tee $PREFIX/etc/apt/preferences.d/preferences
-
 # Purge installed ruby
 apt purge ruby -y
 rm -fr $PREFIX/lib/ruby/gems
@@ -92,7 +77,7 @@ createuser msf
 createdb msf_database
 
 cd $HOME
-curl -sLO https://raw.githubusercontent.com/41Team/metasploit_in_termux/master/postgresql_ctl.sh
+curl -sLO https://raw.githubusercontent.com/41Team/metasploit_termux/master/postgresql_ctl.sh
 chmod +x postgresql_ctl.sh
 
 echo
