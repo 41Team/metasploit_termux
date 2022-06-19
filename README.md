@@ -3,21 +3,21 @@
 ![Metasploit 6 running](https://github.com/41Team/metasploit_termux/blob/master/screenshot/metasploit-screenshot.jpg)
 
 ### Manual
-```bash
-pkg install unstable-repo
 
-pkg install wget
+`pkg install unstable-repo`
 
-pkg install ruby
+`pkg install wget`
 
-gem install bundler
+`pkg install ruby`
 
-wget https://raw.githubusercontent.com/gushmazuko/metasploit_in_termux/master/metasploit.sh
+`gem install bundler`
 
-chmod +x metasploit.sh
+`wget https://raw.githubusercontent.com/41Team/metasploit_termux/master/metasploit.sh`
 
-./metasploit.sh
-```
+`chmod +x metasploit.sh`
+
+`./metasploit.sh`
+
 ## After installation complete
 Start `postgresql`
 ```bash
