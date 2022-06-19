@@ -1,6 +1,6 @@
 # Metasploit Framework in Termux
 
-![Metasploit 6 running](https://github.com/41Team/metasploit_termux/blob/master/screenshot.png)
+![Metasploit 6 running](https://github.com/41Team/metasploit_termux/blob/master/screenshot/metasploit-screenshot.jpg)
 
 ### Manual
 ```bash
